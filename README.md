@@ -1,111 +1,88 @@
-Phase 1 Internship — Scripting & Automation
+# Phase 1 Internship — Scripting & Automation
 
-Overview
+Beginner-friendly Bash and Python projects focused on Linux system information and secure password generation.
 
-This repository contains two beginner-level scripting and automation projects developed using Bash and Python on Kali Linux.
+## Projects
 
-Project 1: System Information Tool
+### 1. Linux System Information Tool
 
-File: "system_info.sh"
+**File:** [`system_info.sh`](system_info.sh)
 
-What it does
+A Bash script that prints a concise report about the current Linux system.
 
-Displays useful information about the Linux system.
+**Features**
+- Current date and time
+- Hostname and operating-system details
+- Kernel version and system architecture
+- CPU information
+- Memory usage
+- Disk usage
 
-Features
+**Requirements**
+- Linux (Kali Linux or another compatible distribution)
+- Bash and standard utilities such as `uname`, `df`, and `free`
 
-- Displays the current date and time.
-- Shows the hostname and operating system.
-- Displays the kernel version and system architecture.
-- Shows CPU information.
-- Displays memory usage.
-- Shows disk usage.
-
-Technologies used
-
-- Bash
-- Linux command-line utilities
-
-Requirements
-
-- Kali Linux or another compatible Linux distribution
-- Bash
-- Standard Linux utilities such as "uname", "df", and "free"
-
-Setup and execution
-
-Open a terminal in the project directory and run:
-
+**Run**
+```bash
 bash system_info.sh
+```
 
-Expected output
+### 2. Secure Password Generator
 
-The terminal displays a system information report containing operating system details, CPU information, memory usage, and disk usage.
+**File:** [`password_generator.py`](password_generator.py)
 
-Project 2: Secure Password Generator
+A command-line Python script that generates passwords using Python's `secrets` module.
 
-File: "password_generator.py"
+**Features**
+- Default password length of 16 characters
+- Custom lengths from 8 to 128 characters
+- Uses lowercase and uppercase letters, digits, and special characters
+- Command-line help
 
-What it does
-
-Generates random passwords using Python's "secrets" module.
-
-Features
-
-- Generates a password with a default length of 16 characters.
-- Supports custom password lengths from 8 to 128 characters.
-- Includes lowercase letters, uppercase letters, digits, and special characters.
-- Uses Python's "secrets" module for secure random selection.
-- Provides command-line help.
-
-Technologies used
-
+**Requirements**
 - Python 3
-- "secrets"
-- "string"
-- "argparse"
+- No third-party packages required
 
-Requirements
-
-- Python 3
-- No additional third-party packages required
-
-Setup and execution
-
-Generate a default password:
-
+**Run**
+Generate a password with the default length:
+```bash
 python3 password_generator.py
+```
 
 Generate a 24-character password:
-
+```bash
 python3 password_generator.py --length 24
+```
 
-Display available options:
-
+View available options:
+```bash
 python3 password_generator.py --help
+```
 
-Expected output
+## Screenshots
 
-The program displays a generated password and its length. Do not publish real passwords in screenshots or documentation.
+The screenshot files currently present in this repository appear to be incomplete, so they need to be uploaded again as valid image files before they can display correctly here.
 
-Screenshots
+- System information output: replace `system_info_output.jpg` with the actual terminal screenshot.
+- Password generator output: replace `passwort_generator_output.png` with the actual terminal screenshot. The filename can optionally be corrected to `password_generator_output.png`, as long as the README path is updated to match.
 
-The repository includes screenshots demonstrating the tools running in the terminal:
+After uploading valid screenshots, embed them here using the exact repository filenames, for example:
 
-- "system_info_output.png" — system information tool output.
-- "password_generator_output.png" — password generator output.
+```markdown
+![System information tool output](system_info_output.jpg)
+![Password generator output](password_generator_output.png)
+```
 
-Important notes and limitations
+## Notes
 
-- System information depends on the Linux environment and available command-line utilities.
-- The password generator accepts lengths from 8 to 128 characters.
-- Generated passwords should be stored securely and not shared publicly.
-- These projects demonstrate basic scripting and automation skills; they are not full system-monitoring or password-management applications.
+- Output varies depending on the Linux system and available utilities.
+- Generated passwords should be stored securely and never shared publicly.
+- Do not include real passwords or other sensitive information in screenshots.
+- These are learning projects and are not intended to replace full system-monitoring or password-management applications.
 
-Learning objectives
+## Learning Objectives
 
-- Practice Bash scripting.
-- Use Linux command-line utilities.
-- Work with Python modules and command-line arguments.
-- Generate random passwords securely.
-- Document and organize projects using GitHub.
+- Practise Bash scripting and Linux command-line utilities
+- Use Python modules and command-line arguments
+- Generate random passwords using a security-focused standard-library module
+- Document and organise small projects in GitHub
